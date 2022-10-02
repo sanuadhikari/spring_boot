@@ -1,0 +1,6 @@
+.idea
+target
+*.iml
+terraform/.*
+terraform/tf-workshop-statefile*
+.DS_Store
