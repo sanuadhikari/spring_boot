@@ -4,18 +4,13 @@
     stages {
         stage('Build') {
             steps {
-                echo 'Building'
+                sh 'mvn clean verify'
             }
         }
-        stage('Test') {
+
+        stage('Publish') {
             steps {
-                echo 'Testing..'
+                echo 'Publishing'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-   }
+     }
